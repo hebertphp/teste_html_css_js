@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 70px;
+    z-index: 1111;
+}
+header h1{
+    margin-left:20px;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    margin: 10px;
+}
+header nav ul li:last-child{
+    margin-right: 20px;
+}
+header a{
+    color: black;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+header a:hover{
+    /* margin-bottom: 10px;// */
+    /* padding: 10px; */
+    transition: easy;
+    color:rgb(80, 73, 184);
+    font-weight: 900;
+
+    border-bottom: 2px solid rgb(80, 73, 184)
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(255, 255, 255, 0.801);
+    position: relative;
+    overflow: hidden;
+    min-height: 40vh;
+    font-size: 2rem;
+    /* width: 70%;
+    margin: 0 auto; */
+}
+.container video{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+.card-container{
+    margin: 40px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-item{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    flex-basis: 350px;
+    /* width: 350px; */
+/*  display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; */
+
+}
+.card-item h3{
+    margin-bottom: 10px;
+    text-align: center;
+    color:rgb(80, 73, 184);
+}
+footer{
+    width: 100%;
+    background: whitesmoke;
+    /* padding: 50px; */
+    display:flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+footer div{
+    /* margin:10px; */
+    padding: 20px;
+}

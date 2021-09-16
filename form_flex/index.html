@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Flex</title>
+    <style>
+        /* 
+        https://codepen.io/mad-d/pen/QZBbgM?editors=1100
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+        .form-container{
+            /* background-color: tomato; */
+            margin: 1rem auto;
+            width: 90%;
+            max-width: 1000px;
+            flex-direction: column;
+            padding: 10px;
+        }
+        select, option, input, label, button{
+            padding: .2rem 1rem;
+            font-size: 1.2rem;
+            color:inherit;
+            
+        }
+        .form-box{
+            display: flex;
+            padding: .5rem 0;
+            /* flex-direction:column; */
+
+        }
+        .form-box label{
+            flex-basis: 9rem;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        .form-box input{
+            flex-basis: 100%;
+        }
+        .form-box button{
+            margin-left: 9rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="form-container">
+        <form action="#" method="POST" name="form-flex">
+            <div class="form-box">
+                <label for="login">Login</label>
+                <input type="text" name="login" id="login" placeholder="Login">
+            </div>
+            <div class="form-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="form-box">
+                <button id="enviar">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
